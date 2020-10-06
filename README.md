@@ -125,19 +125,19 @@ GitHub [issues][sdk-issues] is the preferred channel to interact with our team. 
 
 * **1.10.x** - Approved. Only major critical bugs will be fixed. To get the new features, upgrade to
     1.11.x version of the SDK.
-
 ## Security
 
 ### Jackson Vulnerabilities
 
 #### CVE 2017-15095 & CVE-2018-7489
 
-The AWS SDK for Java is not directly affected by these findings. The SDKs own use of ObjectMapper does not use polymorphic deserialization so deserialization gadgets cannot be exploited. The SDK continues to depend on Jackson 2.6.x due to its compatbility with Java 6. Consumers of the SDK can override the version of Jackson in their own application to a newer version.
+The AWS SDK for Java is not directly affected by these findings. The SDKs own use of ObjectMapper does not use polymorphic deserialization so deserialization gadgets cannot be exploited. The SDK continues to depend on Jackson 2.6.x due to its compatibility with Java 6. Consumers of the SDK can override the version of Jackson in their own application to a newer version.
 
 A good explanation of this type of exploit can be found [here][jackson-deserialization-gadget].
 
 ## AWS SDK for Java 2.x
 A version 2.x of the SDK is generally available. It is a major rewrite of the 1.x code base, built on top of Java 8+ and adds several frequently requested features. These include support for non-blocking I/O, improved start-up performance, automatic iteration over paginated responses and the ability to plug in a different HTTP implementation at run time.
+
 
 For more information see the [AWS SDK for Java 2.x Developer Guide][sdk-v2-dev-guide] or check the project repository in https://github.com/aws/aws-sdk-java-v2.
 
